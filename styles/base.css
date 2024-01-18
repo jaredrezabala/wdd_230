@@ -37,21 +37,20 @@ nav a {
 main {
     width: 80%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+}
+
+section {
+    margin: 10px;
 }
 
 h2 {
 
     text-align: center;
-    grid-column: 1/5;
     margin-bottom: 0;
 }
 
 hr {
     width: 100%;
-    grid-column: 1/5;
 }
 
 h3 {
@@ -69,7 +68,6 @@ ul li {
 }
 
 .card {
-    grid-column: 1/5;
     border-style: solid;
     border-color: lightgray;
 }
