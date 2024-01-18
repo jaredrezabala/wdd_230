@@ -2,20 +2,8 @@
     box-sizing: border-box;
 }
 
-img {
-    margin: 20px;
-    float: left;
-}
-
-.head-grid {
-    width: 100%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}
-
 header {
-    grid-column: 1/6;
+    display: flex;
     font-size: 15px;
     text-align: center;
     background-color: #2d4e7c;
@@ -23,8 +11,16 @@ header {
     justify-content: center;
 }
 
+img {
+    margin: 5px;
+}
+
+h1 {
+    padding: 2rem;
+    margin: 0;
+}
+
 nav {
-    grid-column: 1/6;
     background-color: black;
 }
 
@@ -36,9 +32,7 @@ nav a {
     padding: 5px;
 }
 
-h1 {
-    padding: 15px;
-}
+
 
 main {
     width: 80%;
@@ -65,22 +59,17 @@ h3 {
     color: white;
     padding: 15px;
     margin: 0;
+    text-align: center;
 }
 
-.links {
-    grid-column: 1/5;
-    border-style: solid;
-    border-color: lightgray;
-}
 
 ul li {
     list-style: none;
+
 }
 
 .card {
-
     grid-column: 1/5;
-    text-align: center;
     border-style: solid;
     border-color: lightgray;
 }
@@ -90,4 +79,5 @@ footer {
     margin-top: 10px;
     background-color: #2d4e7c;
     color: white;
+    padding: 1rem;
 }
