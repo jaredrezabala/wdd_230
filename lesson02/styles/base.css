@@ -3,10 +3,6 @@
 
 }
 
-html {
-    font-family: 'Roboto' sans-serif;
-}
-
 header {
     text-align: center;
     background-color: #254774;
@@ -18,9 +14,9 @@ h1 {
     margin: 0;
 }
 
-/* body {
-    font-family: 'Roboto' sans-serif;
-} */
+body {
+    font-family: 'Roboto', sans-serif;
+}
 
 
 section {
