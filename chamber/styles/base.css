@@ -19,10 +19,12 @@ h1 {
     top: 1rem;
     right: 1rem;
     padding: 7px;
+    background-color: #344E41;
 }
 
 #menu::before {
     content: "☰";
+    color: white;
 }
 
 nav a {
@@ -37,6 +39,15 @@ nav ul {
     padding: 0;
     margin: 0;
     display: none;
+}
+
+nav a:hover {
+    border-bottom: solid #344E41;
+}
+
+nav a:active {
+    background-color: #004724;
+    color: white;
 }
 
 .open ul {
@@ -57,14 +68,38 @@ main {
     text-align: center;
 }
 
+h2 {
+    background-color: #344E41;
+    padding: 1rem;
+    color: white;
+}
+
 #join {
     padding: 0.5rem;
     margin: 10px;
+    background-color: #344E41;
+    color: white;
+}
+
+#join:hover {
+    background-color: #588157;
 }
 
 section {
-    background-color: lightgray;
+    /* background-color: lightgray; */
     margin: 20px;
+
+}
+
+section h3,
+p {
+    padding: 10px;
+}
+
+hr {
+    /* color: #004724; */
+    height: 3px;
+    background-color: #004724;
 }
 
 .map {
@@ -74,4 +109,10 @@ section {
 
 footer {
     text-align: center;
+    background-color: #344E41;
+    color: white;
+}
+
+footer p {
+    padding: 10px;
 }

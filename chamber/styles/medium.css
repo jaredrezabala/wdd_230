@@ -1,0 +1,45 @@
+@media screen and (min-width: 500px) {
+    header {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        margin: 20px;
+    }
+
+    #menu {
+        padding: 1rem;
+        margin: 20px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        position: relative;
+
+    }
+
+    #join {
+        position: absolute;
+        top: 400px;
+        left: 40%;
+        right: 40%;
+
+    }
+
+    #weather,
+    #events {
+        border-bottom: solid #344E41;
+    }
+
+    main img {
+
+        margin: 1rem;
+        grid-column: 1/3;
+        width: 95%;
+    }
+
+    #spotlights {
+        grid-column: 1/3;
+    }
+
+}
