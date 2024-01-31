@@ -1,4 +1,8 @@
 @media screen and (min-width: 1000px) {
+    header img {
+        width: 7%;
+    }
+
     nav {
         position: absolute;
         right: 0;

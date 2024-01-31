@@ -14,6 +14,14 @@ h1 {
     margin: 0 0 10px 0;
 }
 
+main img {
+    width: 90%;
+}
+
+header img {
+    width: 30%;
+}
+
 #menu {
     position: absolute;
     top: 1rem;

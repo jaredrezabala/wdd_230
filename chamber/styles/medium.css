@@ -11,6 +11,10 @@
         margin: 20px;
     }
 
+    header img {
+        width: 10%;
+    }
+
     main {
         display: grid;
         grid-template-columns: 1fr 200px;
