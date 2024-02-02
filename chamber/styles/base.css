@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --primary: #344E41;
+    --secondary: #004724;
+    --third: #588157;
+
 }
 
 header {
@@ -27,7 +31,7 @@ header img {
     top: 1rem;
     right: 1rem;
     padding: 7px;
-    background-color: #344E41;
+    background-color: var(--primary);
 }
 
 #menu::before {
@@ -50,11 +54,11 @@ nav ul {
 }
 
 nav a:hover {
-    border-bottom: solid #344E41;
+    background-color: var(--third);
 }
 
 nav a:active {
-    background-color: #004724;
+    background-color: var(--secondary);
     color: white;
 }
 
@@ -77,7 +81,7 @@ main {
 }
 
 h2 {
-    background-color: #344E41;
+    background-color: var(--primary);
     padding: 1rem;
     color: white;
 }
@@ -85,16 +89,15 @@ h2 {
 #join {
     padding: 0.5rem;
     margin: 10px;
-    background-color: #344E41;
+    background-color: var(--primary);
     color: white;
 }
 
 #join:hover {
-    background-color: #588157;
+    background-color: var(--third);
 }
 
 section {
-    /* background-color: lightgray; */
     margin: 20px;
 
 }
@@ -105,19 +108,17 @@ p {
 }
 
 hr {
-    /* color: #004724; */
     height: 3px;
-    background-color: #004724;
+    background-color: var(--secondary);
 }
 
 .map {
-    /* margin: 0 10%; */
     width: 100%;
 }
 
 footer {
     text-align: center;
-    background-color: #344E41;
+    background-color: var(--primary);
     color: white;
 }
 

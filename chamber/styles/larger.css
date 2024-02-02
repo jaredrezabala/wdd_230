@@ -6,8 +6,9 @@
     nav {
         position: absolute;
         right: 0;
-        top: 0.5rem;
+        top: 3rem;
     }
+
 
     nav ul {
         display: flex;
@@ -15,7 +16,7 @@
     }
 
     nav a {
-        margin: 30px;
+        margin: 0 30px;
         color: white;
     }
 
@@ -33,7 +34,7 @@
     nav {
         padding: 0;
         margin: 0;
-        background-color: #344E41;
+        background-color: var(--primary);
         color: white;
     }
 
@@ -55,12 +56,12 @@
     }
 
     #spotlights section {
-        border-top: solid #344E41;
+        border-top: solid var(--primary);
         padding: 10px;
     }
 
     #spotlights section:hover {
-        background-color: #344E41;
+        background-color: var(--primary);
         color: white;
     }
 
