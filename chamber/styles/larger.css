@@ -3,6 +3,11 @@
         width: 7%;
     }
 
+    .switch {
+        display: none;
+
+    }
+
     nav {
         position: absolute;
         right: 0;

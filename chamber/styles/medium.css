@@ -6,10 +6,17 @@
         margin: 20px;
     }
 
+    .switch {
+        top: 2rem;
+        right: 7rem;
+
+    }
+
     #menu {
         padding: 1rem;
         margin: 20px;
     }
+
 
     header img {
         width: 10%;
