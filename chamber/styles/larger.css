@@ -11,7 +11,7 @@
     nav {
         position: absolute;
         right: 0;
-        top: 3rem;
+        top: 0;
     }
 
 
@@ -21,18 +21,12 @@
     }
 
     nav a {
-        margin: 0 30px;
         color: white;
+        margin: 1rem 15px;
     }
 
     #menu {
         display: none;
-    }
-
-    main img {
-        width: 98%;
-        /* grid-column: 1/5; */
-
     }
 
     header,
@@ -44,9 +38,10 @@
     }
 
     #join {
-        position: absolute;
-        top: 55rem;
-        padding: 20px;
+        left: 45%;
+        right: 45%;
+        bottom: 3rem;
+        padding: 1.5rem;
     }
 
     #weather,
