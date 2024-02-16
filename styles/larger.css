@@ -8,6 +8,12 @@
         display: none;
     }
 
+    .hero-label p {
+        font-weight: 700;
+        font-size: 4rem;
+
+    }
+
     main {
         display: grid;
         grid-template-columns: 1fr 200px;

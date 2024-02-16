@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -9,6 +11,30 @@ header {
     background-color: #2d4e7c;
     color: white;
     justify-content: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.hero {
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+}
+
+.hero-label {
+    position: absolute;
+    top: 0;
+    left: 1rem;
+}
+
+.hero-label p {
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: "Dancing Script", cursive;
 }
 
 img {
