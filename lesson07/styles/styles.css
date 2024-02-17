@@ -1,0 +1,51 @@
+html {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(226, 231, 233);
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    width: 80%;
+    justify-content: center;
+    justify-items: center;
+    border: slategray solid;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.one::first-line {
+    color: green;
+}
+
+.two::before {
+    content: "😎";
+}
+
+.two::after {
+    content: "😁";
+}
+
+::marker {
+    content: "✅";
+
+}
+
+a:hover {
+    color: green;
+}
+
+.three:focus {
+    border: 5px solid yellow;
+}
+
+button {
+    padding: 10px;
+}
+
+.five:hover::before {
+    content: "🚀 ";
+}
