@@ -98,6 +98,11 @@ section {
     margin: 10px;
 }
 
+section p {
+    margin: 1rem;
+    text-align: center;
+}
+
 h2 {
 
     text-align: center;
