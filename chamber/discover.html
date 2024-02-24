@@ -22,7 +22,7 @@
 
 <body>
     <header>
-        <img src="images/chamber-logo-large.webp" alt="Chamber of Commerce's logo">
+        <img src="images/chamber-logo-large.webp" alt="Chamber of Commerce's logo" loading="lazy">
         <h1>Buena Fe's Chamber of Commerce</h1>
     </header>
     <label class="switch">
@@ -32,18 +32,62 @@
     <nav>
         <button id="menu"></button>
         <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Discover</a></li>
+            <li><a href="https://jaredrezabala.github.io/wdd230/chamber/index.html#" class="active">Home</a></li>
+            <li><a href="https://jaredrezabala.github.io/wdd230/chamber/discover.html">Discover</a></li>
             <li><a href="#">Directory</a></li>
             <li> <a href="#">Join</a></li>
         </ul>
     </nav>
     <main>
-        <section>
+        <section id="demo">
+            <h2>Demographics</h2>
+            <h3>Population</h3>
+            <p>Total: <span>74410</span></p>
+            <P>Foundation: <span>August 13, 1992</span></P>
+            <p>Official Language: <span>Spanish</span></p>
+            <p>Time Zone: <span>ECT (UTC-5)</span></p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Los_Rios_in_Ecuador_%28%2BGalapagos%29.svg"
+                alt="Map of Buena Fe" loading="lazy">
 
         </section>
-        <section>
-
+        <section id="calendar1">
+            <h2>Calendar</h2>
+            <iframe id="calendar"
+                src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FGuayaquil&bgcolor=%23ffffff&src=ZXMuZWMjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4uZWMjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%230B8043&color=%230B8043"
+                style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </section>
+        <section id="atractions">
+            <h2>Atractions</h2>
+            <h3>Armadillo's Falls</h3>
+            <picture>
+                <source srcset="images/armadillo-falls.webp" media="(max-width: 400px)">
+                <img src="images/armadillo-falls-large.webp" alt="Armadillo's falls" width="1000" loading="lazy">
+            </picture>
+            <h3>Angelita's River</h3>
+            <picture>
+                <source srcset="images/complejo-angelita-small.webp" media="max-width: 400px">
+                <img src="images/complejo-angelita-large.webp" alt="Angelita's river" width="1000" loading="lazy">
+            </picture>
+            <h3>Family Park Lookout</h3>
+            <picture>
+                <source srcset="images/family-park.webp" media="max-width: 400px">
+                <img src="images/family-park-large.webp" alt="Family Park Lookout" width="1000" loading="lazy">
+            </picture>
+            <h3>Fruits Park</h3>
+            <picture>
+                <source srcset="images/fruits.webp" media="(max-width: 400px)">
+                <img src="images/fruits-park-large.webp" alt="Fruits-park" width="1000" loading="lazy">
+            </picture>
+            <h3>Luciernaga Camping Zone</h3>
+            <picture>
+                <source srcset="images/luciernaga.webp" media="(max-width: 400px)">
+                <img src="images/luciernaga-large.webp" alt="Luciernaga camping zone" width="1000" loading="lazy">
+            </picture>
+            <h3>Seven Falls</h3>
+            <picture>
+                <source srcset="images/seven-falls-small.webp" media="(max-width: 400px)">
+                <img src="images/seven-falls.webp" alt="Seven's Falls" width="1000" loading="lazy">
+            </picture>
         </section>
 
     </main>

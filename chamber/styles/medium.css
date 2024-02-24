@@ -25,6 +25,7 @@
     main {
         display: grid;
         grid-template-columns: 1fr 200px;
+        grid-template-rows: 500px 1fr;
         position: relative;
 
     }
@@ -56,4 +57,19 @@
         grid-column: 1/3;
     }
 
+    /* Discovery Page */
+    #demo,
+    #calendar1 {
+        grid-column: 2/3;
+        width: 100%;
+    }
+
+    #atractions {
+        grid-row: 1/3;
+    }
+
+    #calendar {
+        width: 100%;
+        height: 300px;
+    }
 }

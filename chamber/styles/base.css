@@ -190,3 +190,19 @@ footer {
 footer p {
     padding: 10px;
 }
+
+/* Discover page */
+#demo span {
+    color: #6a923a;
+    font-weight: bolder;
+}
+
+#calendar {
+    margin-top: 1rem;
+    width: 80%;
+    height: 400px;
+}
+
+#atractions img {
+    margin-top: 1rem;
+}
