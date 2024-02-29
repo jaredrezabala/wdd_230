@@ -25,9 +25,13 @@
     main {
         display: grid;
         grid-template-columns: 1fr 200px;
-        grid-template-rows: 500px 1fr;
+        /* grid-template-rows: 500px 1fr; */
         position: relative;
 
+    }
+
+    .main-grid {
+        grid-template-rows: 500px 1fr;
     }
 
     .hero-img {

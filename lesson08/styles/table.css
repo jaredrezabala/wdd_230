@@ -1,0 +1,44 @@
+:root {
+    --zebra: hsl(0, 0%, 93%, 1);
+    --borderlight: hsla(0, 0%, 33%, .3);
+    --border: hsla(0, 0%, 20%, .8);
+}
+
+table {
+    margin: 10px auto;
+    border: thin solid var(--border);
+    border-collapse: collapse;
+}
+
+main {
+    width: 80%;
+    margin: 50px auto;
+}
+
+caption {
+    padding: 1rem;
+    caption-side: bottom;
+    color: black;
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    border: 1px solid var(--borderlight)
+}
+
+.dark {
+    background-color: rgb(53, 56, 59);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--zebra);
+}
