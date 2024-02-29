@@ -79,7 +79,7 @@ main {
 }
 
 .wf1 legend {
-    color: lightskyblue;
+    color: rgb(28, 94, 134);
     padding: 0 .5rem;
 }
 
@@ -92,7 +92,7 @@ main {
 
 .wf1 div {
     padding-top: 1rem;
-    color: lightskyblue;
+    color: rgb(28, 94, 134);
     font-size: .9rem;
 }
 
