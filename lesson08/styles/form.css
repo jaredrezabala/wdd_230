@@ -1,0 +1,32 @@
+:root {
+    padding: 0;
+    margin: 0;
+    --primary-color: #608dc7;
+    --secondary-color: #224572;
+    --font: "Roboto Mono", monospace;
+}
+
+form {
+    text-align: center;
+    font-family: var(--font);
+    font-size: small;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin: 1rem;
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: 5px auto;
+}
+
+input[type="submit"] {
+    padding: .5rem;
+    border-radius: 5px;
+    background-image: radial-gradient(var(--primary-color), var(--secondary-color));
+    color: white;
+}
