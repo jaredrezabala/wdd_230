@@ -30,3 +30,18 @@ input[type="submit"] {
     background-image: radial-gradient(var(--primary-color), var(--secondary-color));
     color: white;
 }
+
+/* Record.html */
+#record-main {
+    display: block;
+}
+
+#record-main h1,
+p {
+    text-align: center;
+    text-wrap: wrap;
+}
+
+#record-main p {
+    font-size: larger;
+}
