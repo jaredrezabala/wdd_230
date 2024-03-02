@@ -1,14 +1,15 @@
 const pass1 = document.querySelector("#password");
 const pass2 = document.querySelector("#password2");
 const rangevalue = document.getElementById("range-value");
-const range = document.getElementById("#rating");
+const range = document.getElementById("rating");
 
 
 // **********Password Checker***********
 pass2.addEventListener("focusout", checkSame);
 function checkSame() {
     if (pass1.value !== pass2.value) {
-        console.log("❗Passwords DO NOT MATCH!");
+        pass2.value = "";
+        pass2.focus();
     }
 }
 
