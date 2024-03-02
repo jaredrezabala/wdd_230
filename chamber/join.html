@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buena Fe Chamber of Commerce</title>
+    <meta name="description"
+        content="Official Website for Buena Fe's Chamber of Commerce, city events, services and important announcements are found here">
+    <meta name="author" content="Jared Rezabala">
+    <meta property="og:title" content="Buena Fe's Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Parque_Central_de_Buena_Fe.jpg/1024px-Parque_Central_de_Buena_Fe.jpg">
+    <meta property="og:url" content="https://jaredrezabala.github.io/wdd230/">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/chamber-logo-large.webp" alt="Chamber of Commerce's logo">
+        <h1>Buena Fe's Chamber of Commerce</h1>
+    </header>
+    <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+    </label>
+    <nav>
+        <button id="menu"></button>
+        <ul>
+            <li><a href="https://jaredrezabala.github.io/wdd230/chamber/index.html#" class="active">Home</a></li>
+            <li><a href="https://jaredrezabala.github.io/wdd230/chamber/discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li> <a href="#">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="thankyou.html" method="get">
+            <label>First Name: <input type="text" id="fname" name="fname" required></label>
+            <label>Last Name: <input type="text" id="lname" name="lname" required></label>
+            <label>Title or Position: <input type="text" id="title" name="title" pattern="[A-Za-z\- ]{7,}" required>
+            </label>
+            <label>Email: <input type="email" id="email" name="email" placeholder="example@gmail.com" required></label>
+            <label>Phone Number: <input type="tel" id="tel" name="tel" required></label>
+            <label>Business/Organization Name: <input type="text" id="business" name="business" required></label>
+            <label class="member-top">Membership Level:</label>
+            <label><input type="radio" name="membershipLevel" value="Non-profit">Non-profit Membership</label>
+            <label>
+                <input type="radio" name="membershipLevel" value="Bronze Membership">
+                Bronze Membership
+            </label>
+
+            <label>
+                <input type="radio" name="membershipLevel" value="Silver Membership">
+                Silver Membership
+            </label>
+
+            <label class="member-bottom">
+                <input type="radio" name="membershipLevel" value="Gold Membership">
+                Gold Membership
+            </label>
+            <label>Business/Organization's Description <textarea name="description" id="description" cols="30"
+                    rows="10"></textarea></label>
+            <label><input type="hidden" id="hidden" name="hidden"></label>
+            <label><input type="submit" value="Join Chamber"></label>
+        </form>
+    </main>
+    <footer>
+        <p>Buena Fe Chamber of Commerce</p>
+        <p>info@buenafeinfo.org</p>
+        <p>+593-256897413</p><br>
+        <p id="copyright"></p>
+        <p>WDD 230 Project</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/hamburger-menu.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/toggle-button.js"></script>
+    <script src="scripts/form.js"></script>
+    <script src="scripts/windchill.js"></script>
+
+</body>
+
+</html>

@@ -210,3 +210,65 @@ footer p {
 #atractions img:hover {
     box-shadow: 0 0 50px #004724;
 }
+
+/********* Form Styling *************/
+form {
+    margin: 2rem;
+}
+
+form input[type="text"],
+input[type="tel"],
+input[type="email"],
+label {
+    display: block;
+    text-align: left;
+}
+
+
+form input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    margin: .5px 0 15px;
+    padding: 14px;
+}
+
+form select {
+    display: block;
+    margin: 1rem auto;
+}
+
+form .member-top {
+    margin-top: 1rem;
+}
+
+form .member-bottom {
+    margin-bottom: 1rem;
+}
+
+form input[type="radio"] {
+    margin: .5rem;
+}
+
+form input[type="submit"] {
+    padding: .5rem;
+    background-image: radial-gradient(var(--third), var(--primary));
+    color: white;
+    margin: .5rem 0 1rem;
+    border-radius: 5px;
+}
+
+#record-main {
+    margin: 4rem auto;
+    text-align: center;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#record-main .one {
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    border: groove 1em #004724;
+    border-radius: 2em;
+    background-image: radial-gradient(#6a923a, #004724);
+}
