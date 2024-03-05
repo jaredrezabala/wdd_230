@@ -1,3 +1,3 @@
 const recordDate = document.getElementById("hidden");
-var currentDate = Date.now();
+let currentDate = Date.now();
 recordDate.value = currentDate;
