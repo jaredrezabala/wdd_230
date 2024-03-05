@@ -7,21 +7,17 @@
 }
 
 form {
-    text-align: center;
     font-family: var(--font);
     font-size: small;
-    margin: 0 auto;
 }
 
 label {
     display: block;
     margin: 1rem;
-    text-align: center;
 }
 
 input {
     display: block;
-    margin: 5px auto;
 }
 
 input[type="submit"] {
@@ -29,6 +25,14 @@ input[type="submit"] {
     border-radius: 5px;
     background-image: radial-gradient(var(--primary-color), var(--secondary-color));
     color: white;
+}
+
+#range-value {
+    margin-left: 50px;
+}
+
+#rating {
+    margin-left: 16px;
 }
 
 /* Record.html */
