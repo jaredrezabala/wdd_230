@@ -72,7 +72,8 @@
         grid-row: 1/3;
     }
 
-    #calendar {
+    #calendar iframe {
+        margin-bottom: 1rem;
         width: 100%;
         height: 300px;
     }
