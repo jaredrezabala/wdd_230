@@ -132,10 +132,10 @@ ul li {
     border-color: lightgray;
 }
 
-.map {
-    margin: 0 10%;
-    width: 80%;
-}
+/* .map {
+    margin: 0 auto;
+    width: 100%;
+} */
 
 footer {
     text-align: center;

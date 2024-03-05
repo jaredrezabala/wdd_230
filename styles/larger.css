@@ -26,4 +26,10 @@
     hr {
         grid-column: 1/3;
     }
+
+    /* .map {
+        margin: 0 20%;
+        width: 100%;
+        height: auto;
+    } */
 }
