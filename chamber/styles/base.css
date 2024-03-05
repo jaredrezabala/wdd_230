@@ -257,6 +257,12 @@ form input[type="submit"] {
     border-radius: 5px;
 }
 
+.benefits {
+    text-align: center;
+    border: solid 1px var(--third);
+    margin-bottom: 1rem;
+}
+
 #record-main {
     margin: 4rem auto;
     text-align: center;
