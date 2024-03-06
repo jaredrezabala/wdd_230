@@ -1,3 +1,16 @@
+body {
+    background-color: #e0eeff;
+    color: white;
+}
+
+
+
 h1 {
     text-align: center;
+    color: #2e3d52;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }

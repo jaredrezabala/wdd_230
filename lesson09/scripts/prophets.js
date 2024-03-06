@@ -23,7 +23,10 @@ const displayProphets = (prophets) => {
         card.style.textAlign = "center";
         card.style.lineHeight = "5px";
         card.style.marginTop = "3rem";
+        card.style.marginRight = "5px";
+        card.style.backgroundColor = "#2e3d52";
         card.style.border = "solid";
+        card.style.width = "auto";
         fullName.textContent = `${prophet.name} ${prophet.lastname}`;
         portrait.setAttribute('src', prophet.imageurl);
         portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
