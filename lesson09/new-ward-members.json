@@ -1,0 +1,35 @@
+{
+    "wardInformation": {
+        "familyName": "Rezabala",
+        "movedInDate": "21-02-2024",
+        "numberOfPeople": 5,
+        "visitedByBishopric": true,
+        "familyMembers": [
+            {
+                "name": "Rosa Galeas",
+                "gender": "Female",
+                "birthdate": "10-07-1970"
+            },
+            {
+                "name": "Javier Rezabala",
+                "gender": "Male",
+                "birthdate": "19-07-1973"
+            },
+            {
+                "name": "Sariah Rezabala",
+                "gender": "Female",
+                "birthdate": "17-05-1998"
+            },
+            {
+                "name": "Jared",
+                "gender": "Male",
+                "birthdate": "21-10-2000"
+            },
+            {
+                "name": "Saraih Rezabala",
+                "gender": "Female",
+                "birthdate": "14-03-2006"
+            }
+        ]
+    }
+}
