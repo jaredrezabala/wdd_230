@@ -14,6 +14,12 @@
 
     }
 
+    .hero img {
+        width: 100%;
+        margin: 1rem auto;
+        height: 700px;
+    }
+
     main {
         display: grid;
         grid-template-columns: 1fr 200px;

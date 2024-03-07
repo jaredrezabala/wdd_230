@@ -15,8 +15,8 @@ header {
 
 .hero img {
     width: 100%;
-    height: auto;
-    margin: 0;
+    /* height: auto; */
+    margin: 1rem 0;
 }
 
 .hero {
@@ -132,10 +132,6 @@ ul li {
     border-color: lightgray;
 }
 
-/* .map {
-    margin: 0 auto;
-    width: 100%;
-} */
 
 footer {
     text-align: center;
