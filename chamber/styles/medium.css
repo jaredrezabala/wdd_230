@@ -24,7 +24,7 @@
 
     main {
         display: grid;
-        grid-template-columns: 1fr 200px;
+        /* grid-template-columns: 1fr 200px; */
         /* grid-template-rows: 500px 1fr; */
         position: relative;
 
@@ -90,4 +90,12 @@
     textarea {
         display: block;
     }
+
+    /* ***************** */
+    .list section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        align-items: center;
+    }
+
 }
