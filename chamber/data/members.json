@@ -1,60 +1,60 @@
 {
     "companies": [
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "url": "",
-            "img": "",
-            "membership": ""
+            "name": "Almacenes Tia",
+            "address": "Avenia 7 de Agosto # 1933",
+            "phone": "+5930986034444",
+            "url": "https://www.tia.com.ec/supermercado",
+            "img": "https://www.tia.com.ec/media/logo/stores/2/Grupo_179213_2x.png",
+            "membership": "Gold Membership"
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "url": "",
-            "img": "",
-            "membership": ""
+            "name": "Banco Pichincha",
+            "address": "G5Q Rosa Mosquera",
+            "phone": "(02) 299-9999",
+            "url": "https://www.pichincha.com/",
+            "img": "https://www.pichincha.com/content/published/api/v1.1/assets/CONT7950B3A6841A44C9A0B87D33A017CDAF/native?cb=_cache_433f&channelToken=712a6518832146c488cdf196228d8c00",
+            "membership": "Silver Membership"
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "url": "",
-            "img": "",
-            "membership": ""
+            "name": "Marathon Sports",
+            "address": "CC. SHOPPING, Quevedo",
+            "phone": "1 800 - 627284",
+            "url": "https://www.marathon.store/ec/",
+            "img": "https://media.marathon.store/images/hde/h28/h00/8926515298334.png",
+            "membership": "Bronze Membership"
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "url": "",
-            "img": "",
-            "membership": ""
+            "name": "De Prati",
+            "address": "Via Troncal de la Costa/E25",
+            "phone": "(04)3731800",
+            "url": "https://www.deprati.com.ec/",
+            "img": "https://images.deprati.com.ec/sys-master/images/heb/hd9/8811410980894/logo_deprati_responsive.svg",
+            "membership": "Gold Membership"
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "url": "",
-            "img": "",
-            "membership": ""
+            "name": "Mi Comisariato",
+            "address": " 9 de Octubre 719 y Boyacá",
+            "phone": "043702400",
+            "url": "https://www.elrosado.com/home/MiniInternaG",
+            "img": "https://micomisariato.com/wp-content/uploads/2021/03/logo-comisariato.jpg",
+            "membership": "Bronze Membership"
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "url": "",
-            "img": "",
-            "membership": ""
+            "name": "Payless Shoesource",
+            "address": "Av 10 de agosto y Cristóbal Colón",
+            "phone": "(02) 252-2216",
+            "url": "https://ecuador.payless.com/",
+            "img": "https://paylessec.vtexassets.com/assets/vtex.file-manager-graphql/images/b23b32c0-463c-4080-9c49-ffae9053a26d___c89f36cf25c1bd997d22914e012b632b.png",
+            "membership": "Gold Membership"
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "url": "",
-            "img": "",
-            "membership": ""
+            "name": "Ministerio de Educacion",
+            "address": "Av. Amazonas N34-451 y Av. Atahualpa",
+            "phone": "593-2-396-1300",
+            "url": "https://educacion.gob.ec/",
+            "img": "https://educacion.gob.ec/wp-content/uploads/2017/07/LOGOMINEDUC.jpg",
+            "membership": "Non-profit Membership"
         }
     ]
 }
