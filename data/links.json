@@ -121,12 +121,8 @@
             "lesson": "10",
             "links": [
                 {
-                    "url": "",
-                    "title": ""
-                },
-                {
-                    "url": "",
-                    "title": ""
+                    "url": "https://jaredrezabala.github.io/wdd230/lesson10/weather.html",
+                    "title": "Germany Weather"
                 }
             ]
         }
