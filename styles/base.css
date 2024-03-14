@@ -132,6 +132,14 @@ ul li {
     border-color: lightgray;
 }
 
+section:nth-last-child(1) {
+    text-align: center;
+}
+
+#weather-icon {
+    margin: 0;
+
+}
 
 footer {
     text-align: center;
