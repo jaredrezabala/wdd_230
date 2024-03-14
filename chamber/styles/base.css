@@ -351,3 +351,30 @@ section {
 .list section:nth-child(even) {
     background-color: #bed;
 }
+
+/* Banner */
+.banner {
+    display: none;
+    background-color: var(--primary);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#closeBannerBtn {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: black;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#closeBannerBtn:hover {
+    color: var(--third);
+}
