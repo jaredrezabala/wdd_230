@@ -211,6 +211,10 @@ footer p {
     box-shadow: 0 0 50px #004724;
 }
 
+#weather img {
+    width: 2rem;
+}
+
 /********* Form Styling *************/
 form {
     margin: 2rem;
