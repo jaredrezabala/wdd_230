@@ -27,7 +27,7 @@ input[type="submit"] {
     color: white;
 }
 
-#range-value {
+#range-value1 {
     margin-left: 50px;
 }
 
@@ -43,7 +43,6 @@ input[type="submit"] {
 #record-main h1,
 p {
     text-align: center;
-    text-wrap: wrap;
 }
 
 #record-main p {

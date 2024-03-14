@@ -1,6 +1,6 @@
 const pass1 = document.querySelector("#password");
 const pass2 = document.querySelector("#password2");
-const rangevalue = document.getElementById("range-value");
+const rangevalue = document.getElementById("range-value1");
 const range = document.getElementById("rating");
 
 
