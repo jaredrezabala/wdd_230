@@ -30,6 +30,7 @@ async function getForecast() {
 }
 
 function displayForecast(forecastData) {
+
     const threeDayForecast = forecastData.list.filter(item => item.dt_txt.includes('15:00:00'));
     let day = 0;
     const weekDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
@@ -40,8 +41,9 @@ function displayForecast(forecastData) {
         const iconsrc = `https://openweathermap.org/img/w/${forecastDay.weather[0].icon}.png`;
         const icon = document.createElement('img');
         icon.setAttribute('src', iconsrc);
-        const forecastItem = document.createElement('p');
-        forecastItem.textContent = `${dayOfWeek}: ${Math.trunc(forecastTemp)} °F`;
+        const forecastItem = document.createElement('div');
+        forecastItem.textContent = `${dayOfWeek}: ${Math.trunc(forecastTemp)} °F `;
+        forecastItem.style.padding = '0';
         forecastItem.appendChild(icon);
         tempForecast.appendChild(forecastItem);
         day++;
@@ -54,14 +56,12 @@ getWeather();
 // BANNER 
 document.addEventListener("DOMContentLoaded", function () {
     var today = new Date();
-    var dayOfWeek = today.getDay(); // 0 for Sunday, 1 for Monday, 2 for Tuesday, etc.
+    var dayOfWeek = today.getDay();
 
-    // Check if it's Monday, Tuesday, or Wednesday
     if (dayOfWeek >= 1 && dayOfWeek <= 3) {
         document.getElementById("chamberBanner").style.display = "block";
     }
 
-    // Close banner functionality
     document.getElementById("closeBannerBtn").addEventListener("click", function () {
         document.getElementById("chamberBanner").style.display = "none";
     });
