@@ -355,7 +355,6 @@ section {
 /* Banner */
 .banner {
     display: none;
-    /* background-color: var(--primary); */
     background: linear-gradient(var(--primary), var(--third));
     opacity: 0.9;
     color: white;
@@ -371,7 +370,6 @@ section {
 #closeBannerBtn {
     cursor: pointer;
     border: none;
-    /* background: transparent; */
     background: var(--primary);
     border-radius: 10px;
     padding: 1rem;
