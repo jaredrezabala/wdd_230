@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Scoots</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="">Rentals</a></li>
+            <li><a href="">Reservations</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="agreement-info">
+            <h2>Rental Services and Agreements
+            </h2>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.
+                </li>
+                <li>A valid drivers license is required in hand at the time of rental.
+                </li>
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.
+                </li>
+                <li>Fuel charge is not included.
+                </li>
+                <li>Unlimited mileage.
+                </li>
+                <li>Liability insurance is included.
+                </li>
+                <li>Damage insurance is available for purchase.
+                </li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.
+                </li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.
+                </li>
+                <li>Rentals may be returned to either physical location.
+                </li>
+            </ul>
+        </section>
+        <section>
+            <form method="get" action="blank.html">
+                <label>Date: <input type="date" id="date" name="date"></label>
+                <label>Period: <input type="datetime" id="period" name="period"></label>
+                <label>Rental Type:</label>
+                <select name="rental" id="rental-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="Honda Metropolitan">Honda Metropolitan </option>
+                    <option value="Honda Dio">Honda Dio</option>
+                    <option value="Honda PCX150">Honda PCX150</option>
+                    <option value="Honda Pioneer 1000">Honda Pioneer 1000</option>
+                    <option value="Jeep Wrangler - 4 door">Jeep Wrangler - 4 door</option>
+                    <option value="Jeep Wrangler - 2 door">Jeep Wrangler - 2 door</option>
+                </select>
+                <label>Number: <input type="number" id="number" name="number"></label>
+                <label>Phone number: <input type="tel" id="tel" name="tel"></label>
+                <label>Name: <input type="text" id="name" name="f-name" required></label>
+                <label> Email: <input type="email" id="email" name="email"></label>
+                <label>Home State or Country: <input type="text" id="state" name="state" required></label>
+                <label>Location of dropp-off: <input type="text" id="location" name="location" required></label>
+                <label><input type="submit" value="Rent a Scoot! "></label>
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <p><span class="copyright"></span> | Jared Rezabala | <span class="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>
