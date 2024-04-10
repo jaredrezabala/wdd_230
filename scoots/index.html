@@ -4,6 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <title>Scoots Rental</title>
 </head>
 
@@ -12,6 +20,7 @@
         <h1>Scoots</h1>
     </header>
     <nav>
+        <button id="menu"></button>
         <ul>
             <li><a href="https://jaredrezabala.github.io/wdd230/scoots/index.html" class="active">Home</a></li>
             <li><a href="https://jaredrezabala.github.io/wdd230/scoots/rentals.html">Rentals</a></li>
@@ -24,66 +33,133 @@
             <p>Today's Highest Temperature: <span></span></p>
         </div>
         <section class="hero">
-            <img src="images/cozumel.jpg" alt="Cozumel Island">
+            <picture>
+                <source srcset="images/cozumel-small.webp" media="(max-width:400px)">
+                <source srcset="images/cozumel-medium.webp" media="(max-width:700px)">
+                <img src="images/cozumel-large.webp" alt="Cozumel Island" width="1000">
+            </picture>
             <p>"Empower your island adventure by planning ahead with Scoots Rental! Discover our comprehensive rental
                 services tailored for savvy customers who prefer to research before arrival. Unveil all the essential
                 details, requirements, and seamless rental processes to streamline your journey towards unforgettable
                 experiences on the island!"</p>
-            <button>Rent a Scoot!</button>
+            <button class="hero-button">Rent a Scoot!</button>
         </section>
         <section class="rentals-info">
+
             <h2>Find the Perfect Scooter for you!</h2>
             <h3>Honda Motor Scooters</h3>
             <hr>
-            <h4>Honda Metropolitan (49cc) - 1 person</h4>
-            <img src="images/honda-metropolitan-49cc.webp" alt="Honda Metropolitan (49cc) - 1 person">
-            <p>Cruise through island streets with ease on our Honda Metropolitan (49cc), designed for urban exploration
-                and solo journeys. Compact and efficient, this scooter is perfect for navigating busy streets, offering
-                nimble handling and economical travel for one rider. Experience the convenience and style of this modern
-                urban commuter, making every ride a delightful adventure.</p>
-            <h4>Honda Dio (110cc) - 2 person
-            </h4>
-            <img src="images/honda-dio.jpg" alt="Honda Dio (110cc) - 2 person">
-            <p>Embrace the spirit of urban mobility with our Honda Dio (110cc), an agile and versatile scooter designed
-                for two. Perfect for zipping through city streets, this sleek ride offers effortless maneuverability and
-                comfortable seating for two passengers. Experience the convenience of modern commuting with the Honda
-                Dio, where every journey becomes a shared adventure.</p>
-            <h4>Honda PCX150 (149cc) - 2 person
-            </h4>
-            <img src="images/honda-pcx150.jpg" alt="Honda PCX150 (149cc) - 2 person">
-            <p>With an automatic transmission, nimble maneuverability, and underseat storage a scooter is a great choice
-                for those dealing with congested city roads/parking lot mayhem. A modern-styled scooter like the 2020
-                Honda PCX150 is optimal for the around-town rat race because it features a 149cc engine encased under
-                sporty bodywork. It has plenty of legroom, side- and centerstand, LED lighting throughout, 12-volt
-                accessory adapter, 7 gallons of storage, and a stepped saddle for a comfortable two-up ride. ABS is an
-                option at a $300 increase.</p>
+            <div class="parent">
+                <div class="header">
+                    <h4>Honda Metropolitan (49cc) - 1 person</h4>
+                </div>
+                <img src="images/honda-metropolitan.webp" alt="Honda Metropolitan (49cc) - 1 person">
+                <div class="paragraph">
+                    <p>Cruise through island streets with ease on our Honda Metropolitan (49cc), designed for urban
+                        exploration
+                        and solo journeys. Compact and efficient, this scooter is perfect for navigating busy streets,
+                        offering
+                        nimble handling and economical travel for one rider. Experience the convenience and style of
+                        this
+                        modern
+                        urban commuter, making every ride a delightful adventure.</p>
+                </div>
+            </div>
+            <div class="parent">
+                <div class="header">
+                    <h4>Honda Dio (110cc) - 2 person
+                    </h4>
+                </div>
+                <img src="images/honda-dio.webp" alt="Honda Dio (110cc) - 2 person">
+                <div class="paragraph">
+                    <p>Embrace the spirit of urban mobility with our Honda Dio (110cc), an agile and versatile scooter
+                        designed
+                        for two. Perfect for zipping through city streets, this sleek ride offers effortless
+                        maneuverability
+                        and
+                        comfortable seating for two passengers. Experience the convenience of modern commuting with the
+                        Honda
+                        Dio, where every journey becomes a shared adventure.</p>
+                </div>
+            </div>
+            <div class="parent">
+                <div class="header">
+                    <h4>Honda PCX150 (149cc) - 2 person
+                    </h4>
+                </div>
+                <img src="images/honda-pcx150.webp" alt="Honda PCX150 (149cc) - 2 person">
+                <div class="paragraph">
+                    <p>With an automatic transmission, nimble maneuverability, and underseat storage a scooter is a
+                        great
+                        choice
+                        for those dealing with congested city roads/parking lot mayhem. A modern-styled scooter like the
+                        2020
+                        Honda PCX150 is optimal for the around-town rat race because it features a 149cc engine encased
+                        under
+                        sporty bodywork. It has plenty of legroom, side- and centerstand, LED lighting throughout,
+                        12-volt
+                        accessory adapter, 7 gallons of storage, and a stepped saddle for a comfortable two-up ride. ABS
+                        is
+                        an
+                        option at a $300 increase.</p>
+                </div>
+            </div>
             <h3>Side-by-Side ATV's</h3>
             <hr>
-            <h4>Honda Pioneer 1000 - 4 person
-            </h4>
-            <img src="images/honda-pioneer1000.jpg" alt="Honda Pioneer 1000 - 4 person">
-            <p>The four-door Pioneer 1000-6 Crew measures 152.2 inches (3,866 mm) long, 63 inches wide (1,600 mm) wide,
-                and 76.1 inches (1933 mm) tall, with a wheelbase of 115.2 inches (2,926 mm). This makes it 35,1 inches
-                (892 mm) longer than the two-door Pioneer 1000. The stretched wheelbase results in 28 inches (711 mm) of
-                legroom which according to Honda is best-in-class. Besides the full-size rear bed, there is also
-                under-seat storage in both rows.</p>
+            <div class="parent">
+                <div class="header">
+                    <h4>Honda Pioneer 1000 - 4 person
+                    </h4>
+                </div>
+                <img src="images/honda-pioneer1000.webp" alt="Honda Pioneer 1000 - 4 person">
+                <div class="paragraph">
+                    <p>The four-door Pioneer 1000-6 Crew measures 152.2 inches (3,866 mm) long, 63 inches wide (1,600
+                        mm)
+                        wide,
+                        and 76.1 inches (1933 mm) tall, with a wheelbase of 115.2 inches (2,926 mm). This makes it 35,1
+                        inches
+                        (892 mm) longer than the two-door Pioneer 1000. The stretched wheelbase results in 28 inches
+                        (711
+                        mm) of
+                        legroom which according to Honda is best-in-class. Besides the full-size rear bed, there is also
+                        under-seat storage in both rows.</p>
+                </div>
+            </div>
             <h3>Jeeps</h3>
             <hr>
-            <h4>Jeep Wrangler - 4 door manuel with A/C - 5 person
-            </h4>
-            <img src="images/jeep-wrangler-.png" alt="Jeep Wrangler - 4 door manuel with A/C - 5 person">
-            <p>"Experience rugged versatility and exhilarating freedom with our Jeep Wrangler - a 4-door manual
-                transmission equipped with air conditioning, perfect for up to 5 adventurers. Conquer any terrain in
-                style while enjoying the comfort and convenience of modern amenities. Whether it's a scenic drive or an
-                off-road escapade, this iconic vehicle promises an unforgettable journey packed with thrills and
-                memories."</p>
-            <h4>Jeep Wrangler - 2 door - open air - manuel - 4 person
-            </h4>
-            <img src="images/jeep-wrangler-2doors.jpg" alt="Jeep Wrangler - 2 door - open air - manuel - 4 person">
-            <p>Embark on the ultimate adventure with our Jeep Wrangler - a 2-door, open-air marvel, complete with a
-                manual transmission and seating for up to 4 passengers. Feel the wind in your hair and the thrill of the
-                road as you explore the great outdoors in style. Perfect for those seeking an authentic off-road
-                experience with unmatched freedom and excitement.</p>
+            <div class="parent">
+                <div class="header">
+                    <h4>Jeep Wrangler - 4 door manuel with A/C - 5 person
+                    </h4>
+                </div>
+                <img src="images/jeep-wrangler.webp" alt="Jeep Wrangler - 4 door manuel with A/C - 5 person">
+                <div class="paragraph">
+                    <p>"Experience rugged versatility and exhilarating freedom with our Jeep Wrangler - a 4-door manual
+                        transmission equipped with air conditioning, perfect for up to 5 adventurers. Conquer any
+                        terrain in
+                        style while enjoying the comfort and convenience of modern amenities. Whether it's a scenic
+                        drive or
+                        an
+                        off-road escapade, this iconic vehicle promises an unforgettable journey packed with thrills and
+                        memories."</p>
+                </div>
+            </div>
+            <div class="parent">
+                <div class="header">
+                    <h4>Jeep Wrangler - 2 door - open air - manuel - 4 person
+                    </h4>
+                </div>
+                <img src="images/jeep-wrangler-2doors.webp" alt="Jeep Wrangler - 2 door - open air - manuel - 4 person">
+                <div class="paragraph">
+                    <p>Embark on the ultimate adventure with our Jeep Wrangler - a 2-door, open-air marvel, complete
+                        with a
+                        manual transmission and seating for up to 4 passengers. Feel the wind in your hair and the
+                        thrill of
+                        the
+                        road as you explore the great outdoors in style. Perfect for those seeking an authentic off-road
+                        experience with unmatched freedom and excitement.</p>
+                </div>
+            </div>
         </section>
         <section class="social-links">
             <p>Facebook</p>
@@ -98,7 +174,7 @@
     <footer>
         <p><span class="copyright"></span> | Jared Rezabala | <span class="last-modified"></span></p>
     </footer>
-
+    <script src="scripts/scoots.js"></script>
 </body>
 
 </html>

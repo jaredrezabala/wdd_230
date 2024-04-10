@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    ;
+}
+
+.hero {
+    text-align: center;
+}
+
+hr {
+    color: #a01313;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    padding: 1rem;
+    background-image: linear-gradient(#a01313, #c82828);
+    color: white;
+}
+
+#menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 7px;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+nav {
+    background-color: rgb(255, 255, 255);
+}
+
+.active::before {
+    content: "📍";
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.open ul {
+    display: block;
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.high-temp {
+    text-align: center;
+    padding: 1rem;
+    background-image: radial-gradient(#6f0101, #c11f1f);
+    color: white;
+}
+
+.hero-button {
+    /* margin: 0 auto; */
+    margin-top: 1rem;
+    padding: 1rem;
+    background-image: radial-gradient(#6f0101, #c11f1f);
+    color: white;
+    font-size: large;
+}
+
+p {
+    text-align: center;
+    width: 300px;
+}
+
+.hero p,
+.high-temp p {
+    margin: 0 auto;
+}
+
+.parent {
+    position: relative;
+    margin-top: 2rem;
+}
+
+.header {
+    position: absolute;
+    background-image: linear-gradient(#a01313, #c82828);
+    color: white;
+    border-radius: 15px 50px 30px;
+    right: 0;
+}
+
+.paragraph {
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(#a01313, #c82828);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 15px 50px 30px 5px;
+}
+
+h2,
+h3,
+h4 {
+    padding: 2rem;
+}
+
+img {
+    margin-top: 1rem;
+    width: 400px;
+}
+
+img:hover {
+    padding: 1rem;
+}
+
+.social-links {
+    margin-top: 2rem;
+}
+
+.weather p,
+.social-links p,
+footer p {
+    margin: 0 auto;
+    background-image: linear-gradient(#a01313, #c82828);
+    color: white;
+    width: 100%;
+}
