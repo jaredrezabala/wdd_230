@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <title>Reservations</title>
 </head>
 
 <body>
@@ -12,6 +15,7 @@
         <h1>Scoots</h1>
     </header>
     <nav>
+        <button id="menu"></button>
         <ul>
             <li><a href="https://jaredrezabala.github.io/wdd230/scoots/index.html" class="active">Home</a></li>
             <li><a href="https://jaredrezabala.github.io/wdd230/scoots/rentals.html">Rentals</a></li>
@@ -20,6 +24,7 @@
         </ul>
     </nav>
     <main>
+        <hr class="hr1">
         <section class="agreement-info">
             <h2>Rental Services and Agreements
             </h2>
@@ -46,7 +51,8 @@
                 </li>
             </ul>
         </section>
-        <section>
+        <hr class="hr1">
+        <section class="form1">
             <form method="get" action="blank.html">
                 <label>Date: <input type="date" id="date" name="date"></label>
                 <label>Period: <input type="datetime" id="period" name="period"></label>
@@ -74,6 +80,7 @@
     <footer>
         <p><span class="copyright"></span> | Jared Rezabala | <span class="last-modified"></span></p>
     </footer>
+    <script src="scripts/scoots.js"></script>
 </body>
 
 </html>

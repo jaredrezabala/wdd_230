@@ -4,7 +4,6 @@
     margin: 0;
     text-align: center;
     font-family: "Roboto", sans-serif;
-    ;
 }
 
 .hero {
@@ -68,6 +67,11 @@ nav ul {
     content: "X";
 }
 
+nav li a:hover {
+    background-image: radial-gradient(#6f0101, #c11f1f);
+    color: white;
+}
+
 .high-temp {
     text-align: center;
     padding: 1rem;
@@ -76,7 +80,6 @@ nav ul {
 }
 
 .hero-button {
-    /* margin: 0 auto; */
     margin-top: 1rem;
     padding: 1rem;
     background-image: radial-gradient(#6f0101, #c11f1f);
@@ -135,11 +138,138 @@ img:hover {
     margin-top: 2rem;
 }
 
-.weather p,
+/* .weather p,
 .social-links p,
 footer p {
     margin: 0 auto;
     background-image: linear-gradient(#a01313, #c82828);
     color: white;
     width: 100%;
+} */
+.social-links,
+.weather,
+footer {
+    margin: 0 auto;
+    background-image: linear-gradient(#a01313, #c82828);
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.weather {
+    margin-top: 2rem;
+}
+
+.social-links {
+    margin-top: 2rem;
+}
+
+.weather p,
+.social-links p,
+footer p {
+    width: 100%;
+}
+
+/* RESERVATIONS PAGE */
+.hr1 {
+    width: 70px;
+    margin: 1rem auto;
+    height: 15px;
+    background-image: linear-gradient(#a01313, #c82828);
+}
+
+.agreement-info {
+    padding: 1rem 3rem;
+    text-wrap: wrap;
+    text-align: left;
+}
+
+.agreement-info li {
+    text-align: left;
+    list-style: linear-gradient(#a01313, #c82828);
+}
+
+.form1 {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form1 form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.form1 form input,
+.form1 form select {
+    text-align: left;
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.form1 form input[type="submit"] {
+    padding: 1rem;
+    text-align: center;
+    background-image: linear-gradient(#a01313, #c82828);
+    color: white;
+    font-size: 20px;
+}
+
+.form1 form select {
+    margin-bottom: 1rem;
+}
+
+/* CONTACT PAGE */
+.form2 {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form2 form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.form2 form input,
+textarea {
+    text-align: left;
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.form2 form input[type="submit"] {
+    padding: 1rem;
+    text-align: center;
+    background-image: linear-gradient(#a01313, #c82828);
+    color: white;
+    font-size: 20px;
+}
+
+.hr2 {
+    width: 70px;
+    margin: 2rem auto;
+    height: 15px;
+    background-image: linear-gradient(#a01313, #c82828);
+}
+
+.contact-info h2 {
+    padding-top: 1rem;
+}
+
+.contact-info p {
+    width: 100%;
+}
+
+.maps iframe {
+    width: 300px;
+    margin-bottom: 1rem;
 }
