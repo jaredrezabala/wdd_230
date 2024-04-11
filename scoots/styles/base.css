@@ -14,6 +14,14 @@ hr {
     color: #a01313;
 }
 
+.hr-main {
+    width: 70px;
+    height: 20px;
+    margin: 1rem auto;
+    background-image: linear-gradient(#a01313, #c82828);
+
+}
+
 main {
     width: 100%;
     max-width: 800px;
@@ -82,7 +90,8 @@ nav li a:hover {
 .hero-button {
     margin-top: 1rem;
     padding: 1rem;
-    background-image: radial-gradient(#6f0101, #c11f1f);
+    border-radius: 5px;
+    background-image: linear-gradient(#6f0101, #c11f1f);
     color: white;
     font-size: large;
 }
@@ -138,14 +147,14 @@ img:hover {
     margin-top: 2rem;
 }
 
-/* .weather p,
-.social-links p,
-footer p {
-    margin: 0 auto;
-    background-image: linear-gradient(#a01313, #c82828);
-    color: white;
-    width: 100%;
-} */
+.weather-container {
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    background-color: white;
+    color: #000;
+    font-size: 1em;
+}
+
 .social-links,
 .weather,
 footer {
@@ -157,11 +166,25 @@ footer {
 }
 
 .weather {
+    width: 300px;
     margin-top: 2rem;
+}
+
+.weather h2 {
+    font-size: 1rem;
+}
+
+.weather-info p {
+    font-size: 1rem;
 }
 
 .social-links {
     margin-top: 2rem;
+    padding: 1rem;
+}
+
+.social-links a {
+    color: white;
 }
 
 .weather p,

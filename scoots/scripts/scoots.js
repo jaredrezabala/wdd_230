@@ -1,143 +1,126 @@
-// HAMBURGER MENU
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('nav');
-
-hamButton.addEventListener('click', () => {
-    navigation.classList.toggle('open');
-    hamButton.classList.toggle('open');
+// CLOSEABLE MSG
+const msg = document.querySelector(".high-temp");
+msg.addEventListener('click', () => {
+    msg.style.display = 'none';
 });
+
 // WEATHER INFO
+const weatherUrl = "https://api.openweathermap.org/data/2.5/weather?lat=20.43&lon=-86.92&units=imperial&appid=4fc3489696a2985442c614386e25746d";
+const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=20.43&lon=-86.92&units=imperial&appid=4fc3489696a2985442c614386e25746d";
+const temperature = document.querySelector(".temp");
+const hum = document.querySelector(".humidity");
+const high = document.querySelector(".h-temp");
+const forecast = document.querySelector(".weather-forecast");
 
-// RENTAL PAGE INFO
-const url = "https://jaredrezabala.github.io/wdd230/scoots/data/rentals.json";
-const cards = document.querySelector(".scooters-info");
-
-async function getJsonData() {
-    const response = await fetch(url);
+// async function getWeather() {
+//     const response = await fetch(weatherUrl);
+//     const data = await response.json();
+//     displayWeather(data);
+// }
+// function displayWeather(data) {
+//     const icon = document.createElement('img');
+//     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+//     const weatherMain = data.weather[0].main;
+//     icon.setAttribute('src', iconsrc);
+//     icon.setAttribute('loading', 'lazy');
+//     icon.setAttribute('alt', data.weather[0].weatherMain);
+//     temperature.innerHTML = `${data.main.temp} &degF`;
+//     hum.innerHTML = `${data.main.humidity} &degF`;
+//     high.innerHTML = `${data.main["temp_max"]} &degF`;
+// }
+// getWeather();
+async function getWeather() {
+    const response = await fetch(weatherUrl);
     const data = await response.json();
-    displayData(data.scoots);
+    displayWeather(data);
 }
 
-const displayData = (scoots) => {
-    scoots.forEach(scoot => {
-        const card = document.createElement("section");
-        const name = document.createElement("h2");
-        const image = document.createElement("img");
-        const people = document.createElement("p");
-        const table = document.createElement("table");
+function displayWeather(data) {
+    // Create a wrapper div for the weather info
+    const weatherInfo = document.createElement('div');
+    weatherInfo.classList.add('weather-info');
 
-        // Create table header rows for Reservation
-        const reservationHeader1 = document.createElement("tr");
-        const reservationHeader2 = document.createElement("tr");
-        const reservationHeaderCell = document.createElement("th");
-        reservationHeaderCell.textContent = "Reservation";
-        reservationHeaderCell.setAttribute('colspan', '2');
-        reservationHeaderCell.style.textAlign = "center";
-        reservationHeaderCell.style.backgroundImage = "linear-gradient(#a01313, #c82828)";
-        reservationHeaderCell.style.color = "white";
-        const reservationHeaderCell1 = document.createElement("th");
-        const reservationHeaderCell2 = document.createElement("th");
-        reservationHeaderCell1.textContent = "Half-day";
-        reservationHeaderCell1.style.textAlign = "center";
-        reservationHeaderCell2.textContent = "Full-day";
-        reservationHeaderCell2.style.textAlign = "center";
-        reservationHeader1.appendChild(reservationHeaderCell);
-        reservationHeader2.appendChild(reservationHeaderCell1);
-        reservationHeader2.appendChild(reservationHeaderCell2);
+    // Create elements for weather main, description, and icon
+    const mainTitle = document.createElement('h3');
+    mainTitle.textContent = data.weather[0].main;
 
-        // Create table data row for Reservation
-        const dataReservation = document.createElement("tr");
-        const dataCell1 = document.createElement("td");
-        const dataCell2 = document.createElement("td");
-        dataCell1.textContent = scoot.reservation[0]["half-day"];
-        dataCell1.style.textAlign = "center";
-        dataCell2.textContent = scoot.reservation[0]["full-day"];
-        dataCell2.style.textAlign = "center";
-        dataReservation.appendChild(dataCell1);
-        dataReservation.appendChild(dataCell2);
+    const description = document.createElement('p');
+    description.textContent = data.weather[0].description;
 
-        // Create table header rows for Walk-In
-        const walkInHeader1 = document.createElement("tr");
-        const walkInHeader2 = document.createElement("tr");
-        const walkInHeaderCell = document.createElement("th");
-        walkInHeaderCell.textContent = "Walk-In";
-        walkInHeaderCell.setAttribute('colspan', '2');
-        walkInHeaderCell.style.textAlign = "center";
-        walkInHeaderCell.style.backgroundImage = "linear-gradient(#a01313, #c82828)";
-        walkInHeaderCell.style.color = "white";
-        const walkInHeaderCell1 = document.createElement("th");
-        const walkInHeaderCell2 = document.createElement("th");
-        walkInHeaderCell1.textContent = "Half-day";
-        walkInHeaderCell1.style.textAlign = "center";
-        walkInHeaderCell2.textContent = "Full-day";
-        walkInHeaderCell2.style.textAlign = "center";
-        walkInHeader1.appendChild(walkInHeaderCell);
-        walkInHeader2.appendChild(walkInHeaderCell1);
-        walkInHeader2.appendChild(walkInHeaderCell2);
+    const icon = document.createElement('img');
+    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    icon.setAttribute('src', iconsrc);
+    icon.setAttribute('loading', 'lazy');
+    icon.style.width = '100px';
+    icon.setAttribute('alt', data.weather[0].description);
 
-        // Create table data row for Walk-In
-        const dataWalkIn = document.createElement("tr");
-        const dataWalkInCell1 = document.createElement("td");
-        const dataWalkInCell2 = document.createElement("td");
-        dataWalkInCell1.textContent = scoot.walkin[0]["half-day"];
-        dataWalkInCell1.style.textAlign = "center";
-        dataWalkInCell2.textContent = scoot.walkin[0]["full-day"];
-        dataWalkInCell2.style.textAlign = "center";
-        dataWalkIn.appendChild(dataWalkInCell1);
-        dataWalkIn.appendChild(dataWalkInCell2);
+    // Append weather main, description, and icon to the weather info div
+    weatherInfo.appendChild(mainTitle);
+    weatherInfo.appendChild(description);
+    weatherInfo.appendChild(icon);
 
-        // Set attributes for table
-        table.style.border = "solid";
-        table.style.borderCollapse = "collapse";
-        table.style.margin = "0 auto"; // Center the table
+    // Append the weather info div to the weather container
+    const weatherContainer = document.querySelector('.weather-container');
+    weatherContainer.appendChild(weatherInfo);
 
-        // Set padding for cells and columns
-        [reservationHeaderCell, reservationHeaderCell1, reservationHeaderCell2, dataCell1, dataCell2, walkInHeaderCell, walkInHeaderCell1, walkInHeaderCell2, dataWalkInCell1, dataWalkInCell2].forEach(cell => {
-            cell.style.padding = "1rem";
-        });
+    // Display additional weather data points (humidity, max temp, etc.)
+    const temperature = document.createElement('p');
+    temperature.textContent = `Temperature: ${data.main.temp} °F`;
+    high.innerHTML = `${data.main["temp_max"]} &degF`;
 
-        // Set borders for header cells
-        [reservationHeaderCell, reservationHeaderCell1, reservationHeaderCell2, walkInHeaderCell, walkInHeaderCell1, walkInHeaderCell2].forEach(cell => {
-            cell.style.border = "1px solid black";
-        });
+    const humidity = document.createElement('p');
+    humidity.textContent = `Humidity: ${data.main.humidity} %`;
 
-        // Set borders for data cells
-        [dataCell1, dataCell2, dataWalkInCell1, dataWalkInCell2].forEach(cell => {
-            cell.style.border = "1px solid black";
-        });
+    // Append additional weather data points to the weather container
+    weatherContainer.appendChild(temperature);
+    weatherContainer.appendChild(humidity);
+    // weatherContainer.appendChild(maxTemp);
+}
 
-        // Append header and data rows to table
-        table.appendChild(reservationHeader1);
-        table.appendChild(reservationHeader2);
-        table.appendChild(dataReservation);
-        table.appendChild(walkInHeader1);
-        table.appendChild(walkInHeader2);
-        table.appendChild(dataWalkIn);
+getWeather();
 
-        // Style Max Persons section
-        people.textContent = `Max. Persons: ${scoot.persons}`;
-        people.style.textAlign = "center";
-        people.style.fontSize = "1.5rem"; // Bigger font size
-        people.style.padding = "1rem"; // Padding
+// getWeather();
 
-        // Center the Max Persons section
-        people.style.margin = "0 auto";
-        const horizontal = document.createElement("hr");
-        // horizontal.style.marginTop = "2rem";
-        horizontal.style.width = "70px";
-        horizontal.style.height = "15px";
-        horizontal.style.backgroundColor = "#a01313";
-        horizontal.style.margin = "2rem auto";
-        name.textContent = scoot.model;
-        image.setAttribute('src', scoot.img);
-        image.setAttribute('loading', 'lazy');
-        image.setAttribute('alt', scoot.model);
-        card.appendChild(horizontal);
-        card.appendChild(name);
-        card.appendChild(image);
-        card.appendChild(people);
-        card.appendChild(table);
-        cards.appendChild(card);
+// GET NEXT DATA FORECAST TEMP AT 3PM
+async function getForecast() {
+    const response = await fetch(forecastUrl);
+    const data = await response.json();
+    displayForecast(data);
+}
+
+function nextDayForecast(forecastList) {
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    tomorrow.setHours(15, 0, 0, 0);
+
+    const nextDayForecasts = forecastList.filter(forecast => {
+        const forecastDate = new Date(forecast.dt_txt);
+        return forecastDate.getDate() === tomorrow.getDate() && forecastDate.getMonth() === tomorrow.getMonth() && forecastDate.getFullYear() === tomorrow.getFullYear();
     });
+
+    const forecastAt3PM = nextDayForecasts.find(forecast => {
+        const forecastDate = new Date(forecast.dt_txt);
+        return forecastDate.getHours() === 15;
+    });
+
+    if (forecastAt3PM) {
+        forecast.innerHTML = `${forecastAt3PM.main.temp} &degF`;
+    } else {
+        console.log("No forecast available for 3 PM next day.");
+    }
 }
-getJsonData();
+
+function displayForecast(data) {
+    nextDayForecast(data.list);
+}
+getForecast();
+
+
+
+
+
+
+
+
+
+
