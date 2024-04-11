@@ -1,0 +1,16 @@
+@media screen and (min-width: 1000px) {
+    nav ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        background-image: linear-gradient(#a01313, #c82828);
+    }
+
+    nav ul li a {
+        color: white;
+    }
+
+    #menu {
+        display: none;
+    }
+}
