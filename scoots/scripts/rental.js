@@ -76,27 +76,23 @@ const displayData = (scoots) => {
         dataWalkIn.appendChild(dataWalkInCell1);
         dataWalkIn.appendChild(dataWalkInCell2);
 
-        // Set attributes for table
+
         table.style.border = "solid";
         table.style.borderCollapse = "collapse";
-        table.style.margin = "0 auto"; // Center the table
+        table.style.margin = "0 auto";
 
-        // Set padding for cells and columns
         [reservationHeaderCell, reservationHeaderCell1, reservationHeaderCell2, dataCell1, dataCell2, walkInHeaderCell, walkInHeaderCell1, walkInHeaderCell2, dataWalkInCell1, dataWalkInCell2].forEach(cell => {
             cell.style.padding = "1rem";
         });
 
-        // Set borders for header cells
         [reservationHeaderCell, reservationHeaderCell1, reservationHeaderCell2, walkInHeaderCell, walkInHeaderCell1, walkInHeaderCell2].forEach(cell => {
             cell.style.border = "1px solid black";
         });
 
-        // Set borders for data cells
         [dataCell1, dataCell2, dataWalkInCell1, dataWalkInCell2].forEach(cell => {
             cell.style.border = "1px solid black";
         });
 
-        // Append header and data rows to table
         table.appendChild(reservationHeader1);
         table.appendChild(reservationHeader2);
         table.appendChild(dataReservation);
@@ -104,16 +100,14 @@ const displayData = (scoots) => {
         table.appendChild(walkInHeader2);
         table.appendChild(dataWalkIn);
 
-        // Style Max Persons section
+
         people.textContent = `Max. Persons: ${scoot.persons}`;
         people.style.textAlign = "center";
-        people.style.fontSize = "1.5rem"; // Bigger font size
-        people.style.padding = "1rem"; // Padding
+        people.style.fontSize = "1.5rem";
+        people.style.padding = "1rem";
 
-        // Center the Max Persons section
         people.style.margin = "0 auto";
         const horizontal = document.createElement("hr");
-        // horizontal.style.marginTop = "2rem";
         horizontal.style.width = "70px";
         horizontal.style.height = "15px";
         horizontal.style.backgroundColor = "#a01313";

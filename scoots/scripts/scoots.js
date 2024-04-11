@@ -12,23 +12,6 @@ const hum = document.querySelector(".humidity");
 const high = document.querySelector(".h-temp");
 const forecast = document.querySelector(".weather-forecast");
 
-// async function getWeather() {
-//     const response = await fetch(weatherUrl);
-//     const data = await response.json();
-//     displayWeather(data);
-// }
-// function displayWeather(data) {
-//     const icon = document.createElement('img');
-//     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-//     const weatherMain = data.weather[0].main;
-//     icon.setAttribute('src', iconsrc);
-//     icon.setAttribute('loading', 'lazy');
-//     icon.setAttribute('alt', data.weather[0].weatherMain);
-//     temperature.innerHTML = `${data.main.temp} &degF`;
-//     hum.innerHTML = `${data.main.humidity} &degF`;
-//     high.innerHTML = `${data.main["temp_max"]} &degF`;
-// }
-// getWeather();
 async function getWeather() {
     const response = await fetch(weatherUrl);
     const data = await response.json();
@@ -36,11 +19,9 @@ async function getWeather() {
 }
 
 function displayWeather(data) {
-    // Create a wrapper div for the weather info
     const weatherInfo = document.createElement('div');
     weatherInfo.classList.add('weather-info');
 
-    // Create elements for weather main, description, and icon
     const mainTitle = document.createElement('h3');
     mainTitle.textContent = data.weather[0].main;
 
@@ -54,16 +35,13 @@ function displayWeather(data) {
     icon.style.width = '100px';
     icon.setAttribute('alt', data.weather[0].description);
 
-    // Append weather main, description, and icon to the weather info div
     weatherInfo.appendChild(mainTitle);
     weatherInfo.appendChild(description);
     weatherInfo.appendChild(icon);
 
-    // Append the weather info div to the weather container
     const weatherContainer = document.querySelector('.weather-container');
     weatherContainer.appendChild(weatherInfo);
 
-    // Display additional weather data points (humidity, max temp, etc.)
     const temperature = document.createElement('p');
     temperature.textContent = `Temperature: ${data.main.temp} °F`;
     high.innerHTML = `${data.main["temp_max"]} &degF`;
@@ -71,15 +49,11 @@ function displayWeather(data) {
     const humidity = document.createElement('p');
     humidity.textContent = `Humidity: ${data.main.humidity} %`;
 
-    // Append additional weather data points to the weather container
     weatherContainer.appendChild(temperature);
     weatherContainer.appendChild(humidity);
-    // weatherContainer.appendChild(maxTemp);
 }
 
 getWeather();
-
-// getWeather();
 
 // GET NEXT DATA FORECAST TEMP AT 3PM
 async function getForecast() {
